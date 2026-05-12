@@ -13,31 +13,31 @@
 * cd base.py (# base.py is one of your file from the unzipped file)
 
 # 
-Client
-  ↓
-Client Portal
-  ↓
-GCS Bucket - Uncleaned
-  ↓
-automation_bwz
-  ├── File Cleaning
-  ├── Validation
-  ├── Transformation 
-  	└── Notifications / Error Tracking
-  	└── GCS Bucket - Cleaned
-  			↓
-BigQuery Tables
-  ├── Till GSR Flow
-  │     ├── Calculations
-  │     └── Email + Excel to Client
-  │
-  └── New Revised GSR Flow
-        ├── Rate Creation from Working File
-        ├── ZSD CN / Scheme Calculations
-        ├── Email Summary to Client
-        ├── automation_bwz_load
-        ├── Append to YTD BigQuery Table
-        ├── Power BI Dashboard
-        └── Archive Handling
-                ├── ZSD / Taxable / Scheme Mapping = Merge-based
-                └── Other files = Latest-file based
+* Client
+ *  ↓
+* Client Portal
+  * ↓
+* GCS Bucket - Uncleaned
+*   ↓
+* automation_bwz
+*   ├── File Cleaning
+*   ├── Validation
+ *  ├── Transformation 
+ *  	└── Notifications / Error Tracking
+  * 	└── GCS Bucket - Cleaned
+ *  			↓
+* BigQuery Tables
+*   ├── Till GSR Flow
+*   │     ├── Calculations
+ *  │     └── Email + Excel to Client
+  │* 
+  * └── New Revised GSR Flow
+    *     ├── Rate Creation from Working File
+      *   ├── ZSD CN / Scheme Calculations
+    *     ├── Email Summary to Client
+    *     ├── automation_bwz_load
+    *     ├── Append to YTD BigQuery Table
+   *      ├── Power BI Dashboard
+   *      └── Archive Handling
+     *            ├── ZSD / Taxable / Scheme Mapping = Merge-based
+     *            └── Other files = Latest-file based
